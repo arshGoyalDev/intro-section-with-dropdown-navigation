@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Features
+    <!-- css -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/querries.css" />
+
+    <!-- js -->
+
+    <script defer src="./js/script.js"></script>
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="snap" />
+      </div>
+
+      <div>
+        <nav class="nav">
+          <div class="nav-item">
+            <div class="nav-btn">
+              Features
+              <img src="./images/icon-arrow-up.svg" alt="arrow-up" />
+            </div>
+            <ul class="nav-list">
+              <li>
+                <img src="./images/icon-todo.svg" alt="todo" />
+                Todo List
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" alt="calendar" />
+                Calendar
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" alt="reminders" />
+                Reminders
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" alt="planning" />
+                Planning
+              </li>
+            </ul>
+          </div>
+          <div class="nav-item">
+            <div class="nav-btn">
+              Company
+              <img src="./images/icon-arrow-up.svg" alt="arrow-up" />
+            </div>
+            <ul class="nav-list">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+          <div class="nav-item">
+            <a href="./Careers">Careers</a>
+          </div>
+          <div class="nav-item">
+            <a href="./About">About</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="btn-container">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+      </div>
+    </header>
+
+    <!-- Features
   Company
   Careers
   About
@@ -29,5 +100,5 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
+  </body>
 </html>
