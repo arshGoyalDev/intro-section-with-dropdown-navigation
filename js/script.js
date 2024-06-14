@@ -11,3 +11,18 @@ navBtn.forEach((btn) => {
     }
   });
 });
+
+// toggle menu (for mobile devices)
+
+let openBtn = document.querySelector(".menu-btn");
+let closeBtn = document.querySelector(".close-btn");
+
+let menu = document.querySelector(".mobile-nav");
+
+openBtn.addEventListener('click', (e) => {
+  menu.classList.remove("hidden");
+})
+
+closeBtn.addEventListener('click', (e) => {
+  menu.classList.add("hidden");
+})

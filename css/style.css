@@ -39,7 +39,7 @@ a {
   align-items: end;
 }
 
-.hamburger {
+.menu-btn {
   width: 40px;
   height: 25px;
   border: none;
@@ -53,6 +53,11 @@ a {
   display: flex;
   width: 100vw;
   height: 100vh;
+  visibility: visible;
+}
+
+.mobile-nav.hidden {
+  visibility: hidden;
 }
 
 .background {
@@ -63,7 +68,14 @@ a {
   height: 100vh;
   background: black;
   opacity: 0.5;
+  visibility: visible;
   z-index: 2;
+  transition: 0.3s;
+}
+
+.hidden .background {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .nav-container {
@@ -75,9 +87,18 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: var(--almost-white);
   padding: 20px;
+  background: var(--almost-white);
+  opacity: 1;
+  visibility: visible;
   z-index: 100;
+  transition: 0.3s;
+}
+
+.hidden .nav-container {
+  right: -65vw;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .close-btn {
