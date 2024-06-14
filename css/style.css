@@ -24,6 +24,12 @@ a {
   text-decoration: none;
 }
 
+/* body */ 
+
+body {
+  background: var(--almost-white);
+}
+
 /* header */
 
 .header {
@@ -91,7 +97,7 @@ a {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  background: var(--almost-white);
+  background: white;
   opacity: 1;
   visibility: visible;
   z-index: 100;
