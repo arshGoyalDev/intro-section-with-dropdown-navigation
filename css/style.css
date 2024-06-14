@@ -46,6 +46,8 @@ a {
   background: transparent;
 }
 
+/* nav-bar */
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -83,6 +85,7 @@ a {
   top: 0;
   right: 0;
   width: 65vw;
+  max-width: 350px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -123,31 +126,24 @@ nav {
   color: var(--medium-gray);
   font-weight: 500;
   gap: 10px;
+  transition: 0.2s;
   cursor: pointer;
+}
+
+.nav-btn:hover,
+.nav-item a:hover {
+  color: var(--almost-black);
 }
 
 .nav-item .arrow-img {
   transition: 0.2s;
 }
 
-.nav-item.open .arrow-img{
+.nav-item.open .arrow-img {
   transform: rotate(180deg);
 }
 
-.btn-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.btn-container button {
-  color: var(--medium-gray);
-  font-weight: 600;
-  background: transparent;
-  padding: 15px 20px;
-  border-radius: 15px;
-}
+/* drop-down menu */
 
 .menu {
   height: 0;
@@ -171,10 +167,39 @@ nav {
   align-items: center;
   gap: 10px;
   padding: 10px 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  color: var(--almost-black);
 }
 
 .menu li img {
   width: 20px;
+}
+
+/* login and register btn */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-container button {
+  color: var(--medium-gray);
+  font-weight: 600;
+  background: transparent;
+  padding: 15px 20px;
+  border-radius: 15px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn-container button:hover {
+  color: var(--almost-black);
 }
 
 .login-btn {
@@ -183,4 +208,8 @@ nav {
 
 .register-btn {
   border: 2px solid var(--medium-gray);
+}
+
+.register-btn:hover {
+  border: 2px solid var(--almost-black);
 }
