@@ -213,3 +213,67 @@ nav {
 .register-btn:hover {
   border: 2px solid var(--almost-black);
 }
+
+/* main */
+
+.main {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+  padding-top: 20px;
+}
+
+.img-container .mobile {
+  width: 100%;
+}
+
+.img-container .desktop {
+  display: none;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  align-items: center;
+  gap: 50px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.text {
+  color: var(--medium-gray);
+  line-height: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.learn-more-btn {
+  color: var(--almost-white);
+  font-weight: 700;
+  padding: 20px 30px;
+  background: var(--almost-black);
+  border: 0;
+  border-radius: 15px;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4%;
+}
+
+.logo-container img {
+  width: 22%;
+}
