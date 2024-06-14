@@ -91,31 +91,33 @@ a {
 nav {
   display: flex;
   flex-direction: column;
-}
-
-.nav-item {
-  padding: 15px 15px 15px 0;
+  gap: 10px;
 }
 
 .nav-btn,
 .nav-item a {
   display: flex;
   align-items: center;
-  gap: 10px;
+  padding: 10px 0;
   color: var(--medium-gray);
   font-weight: 500;
+  gap: 10px;
   cursor: pointer;
 }
 
-.nav-list {
-  display: none;
+.nav-item .arrow-img {
+  transition: 0.2s;
+}
+
+.nav-item.open .arrow-img{
+  transform: rotate(180deg);
 }
 
 .btn-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
 .btn-container button {
@@ -124,6 +126,34 @@ nav {
   background: transparent;
   padding: 15px 20px;
   border-radius: 15px;
+}
+
+.menu {
+  height: 0;
+  color: var(--medium-gray);
+  font-weight: 500;
+  padding: 0 20px;
+  list-style-type: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.open .menu {
+  height: fit-content;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 5px;
+}
+
+.menu li img {
+  width: 20px;
 }
 
 .login-btn {
