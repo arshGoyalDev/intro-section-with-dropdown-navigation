@@ -1,3 +1,5 @@
+/* for devices with width more than 1000px */
+
 @media (min-width: 1000px) {
   /* header */
 
@@ -97,5 +99,72 @@
 
   .btn-container button {
     padding: 15px 30px;
+  }
+}
+
+/* for devices with width more than 1350px */
+
+@media (min-width: 1350px) {
+  /* main */
+
+  .main {
+    height: calc(100vh - 112px);
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 8% 6% 8%;
+    gap: 10%;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-container .mobile {
+    display: none;
+  }
+
+  .img-container .desktop {
+    width: 100%;
+
+    height: 100%;
+    display: block;
+  }
+
+  .info-container {
+    width: 100%;
+    height: 100%;
+    align-items: start;
+    justify-content: end;
+    gap: 20%;
+    padding: 0;
+  }
+
+  .info {
+    gap: 50px;
+    align-items: flex-start;
+  }
+
+  .heading,
+  .heading span {
+    font-size: 70px;
+  }
+
+  .heading span {
+    display: block;
+  }
+
+  .text {
+    width: 80%;
+    text-align: start;
+  }
+
+  .logo-container {
+    justify-self: flex-end;
+  }
+
+  .logo-container img {
+    width: 150px;
   }
 }

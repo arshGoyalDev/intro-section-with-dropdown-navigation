@@ -220,7 +220,7 @@ nav {
   display: flex;
   flex-direction: column-reverse;
   gap: 50px;
-  padding-top: 20px;
+  padding: 20px 0 0 0;
 }
 
 .img-container .mobile {
@@ -246,8 +246,10 @@ nav {
   gap: 30px;
 }
 
-.heading {
+.heading,
+.heading span {
   font-size: 40px;
+  font-weight: 700;
 }
 
 .text {
