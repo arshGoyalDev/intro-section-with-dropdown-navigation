@@ -268,8 +268,15 @@ nav {
   font-weight: 700;
   padding: 20px 30px;
   background: var(--almost-black);
-  border: 0;
+  border: 3px solid transparent;
   border-radius: 15px;
+  transition: 0.3s;
+}
+
+.learn-more-btn:hover {
+  border: 3px solid var(--almost-black);
+  background: transparent;
+  color: var(--almost-black);
 }
 
 .logo-container {
