@@ -117,6 +117,7 @@
   }
 
   .img-container {
+    width: 100%;
     background-image: url(../images/image-hero-desktop.png);
     background-size: contain;
     background-repeat: no-repeat;
