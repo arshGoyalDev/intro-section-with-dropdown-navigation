@@ -5,7 +5,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 ##
 <br>
 
-![](./images/preview.svg)
+![](./images/preview.png)
 
 
 ## Table of contents
